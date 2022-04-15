@@ -56,7 +56,7 @@ interface ApiService {
         private const val Q_APPLE = "apple"
         private const val Q_TESLA = "tesla"
         private const val FROM_APPLE = "2022-04-13"
-        private const val FROM_TESLA = "2022-03-14"
+        private const val FROM_TESLA = "2022-03-15"
         private const val TO = "2022-04-13"
         private const val SORT_BY_APPLE = "popularity"
         private const val SORT_BY_TESLA = "publishedAt"

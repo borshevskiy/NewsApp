@@ -33,18 +33,22 @@ class TechCrunchFragment : Fragment() {
         mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
         _binding = FragmentTechcrunchBinding.inflate(inflater, container, false)
         setupRecyclerView()
+        checkOnlineAndGetApiData()
+        return binding.root
+    }
+
+    private fun checkOnlineAndGetApiData() {
         mainViewModel.readBackOnline.observe(viewLifecycleOwner) {
             mainViewModel.backOnline = it
         }
         lifecycleScope.launchWhenStarted {
             networkListener = NetworkListener()
-            networkListener.checkNetworkAvailability(requireContext()).collect {
-                    status -> mainViewModel.networkStatus = status
+            networkListener.checkNetworkAvailability(requireContext()).collect { status ->
+                mainViewModel.networkStatus = status
                 mainViewModel.showNetworkStatus()
                 requestApiData()
             }
         }
-        return binding.root
     }
 
     private fun setupRecyclerView() {

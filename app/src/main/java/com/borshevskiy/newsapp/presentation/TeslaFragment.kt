@@ -1,6 +1,7 @@
 package com.borshevskiy.newsapp.presentation
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,18 +34,22 @@ class TeslaFragment : Fragment() {
         mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
         _binding = FragmentTeslaBinding.inflate(inflater, container, false)
         setupRecyclerView()
+        checkOnlineAndGetApiData()
+        return binding.root
+    }
+
+    private fun checkOnlineAndGetApiData() {
         mainViewModel.readBackOnline.observe(viewLifecycleOwner) {
             mainViewModel.backOnline = it
         }
         lifecycleScope.launchWhenStarted {
             networkListener = NetworkListener()
-            networkListener.checkNetworkAvailability(requireContext()).collect {
-                    status -> mainViewModel.networkStatus = status
+            networkListener.checkNetworkAvailability(requireContext()).collect { status ->
+                mainViewModel.networkStatus = status
                 mainViewModel.showNetworkStatus()
                 requestApiData()
             }
         }
-        return binding.root
     }
 
     private fun setupRecyclerView() {
