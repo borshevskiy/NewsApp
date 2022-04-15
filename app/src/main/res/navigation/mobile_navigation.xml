@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_apple">
+
+    <fragment
+        android:id="@+id/navigation_apple"
+        android:name="com.borshevskiy.newsapp.presentation.AppleFragment"
+        android:label="@string/title_apple"
+        tools:layout="@layout/fragment_apple" />
+
+    <fragment
+        android:id="@+id/navigation_tesla"
+        android:name="com.borshevskiy.newsapp.presentation.TeslaFragment"
+        android:label="@string/title_tesla"
+        tools:layout="@layout/fragment_tesla" />
+
+    <fragment
+        android:id="@+id/navigation_business"
+        android:name="com.borshevskiy.newsapp.presentation.BusinessFragment"
+        android:label="@string/title_business"
+        tools:layout="@layout/fragment_business" />
+
+    <fragment
+        android:id="@+id/navigation_techCrunch"
+        android:name="com.borshevskiy.newsapp.presentation.TechCrunchFragment"
+        android:label="@string/title_techCrunch"
+        tools:layout="@layout/fragment_techcrunch" />
+
+    <fragment
+        android:id="@+id/navigation_wallStreet"
+        android:name="com.borshevskiy.newsapp.presentation.WallStreetFragment"
+        android:label="@string/title_wallStreet"
+        tools:layout="@layout/fragment_wallstreet" />
+</navigation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_apple.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_business.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_no_image.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_sad.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_techcrunch.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_tesla.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/drawable/ic_wallstreet.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/font/courgette.xml" value="0.21822916666666667" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/fragment_apple.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/fragment_business.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/fragment_techcrunch.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/fragment_tesla.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/fragment_wallstreet.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/news_row_layout.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/layout/shimmer_layout.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidProjects/NewsApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18802083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

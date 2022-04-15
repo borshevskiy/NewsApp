@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_apple"
+        android:icon="@drawable/ic_apple"
+        android:title="@string/title_apple" />
+
+    <item
+        android:id="@+id/navigation_tesla"
+        android:icon="@drawable/ic_tesla"
+        android:title="@string/title_tesla" />
+
+    <item
+        android:id="@+id/navigation_business"
+        android:icon="@drawable/ic_business"
+        android:title="@string/title_business" />
+
+    <item
+        android:id="@+id/navigation_techCrunch"
+        android:icon="@drawable/ic_techcrunch"
+        android:title="@string/title_techCrunch" />
+
+    <item
+        android:id="@+id/navigation_wallStreet"
+        android:icon="@drawable/ic_wallstreet"
+        android:title="@string/title_wallStreet" />
+
+</menu>
