@@ -4,6 +4,7 @@ import com.borshevskiy.newsapp.data.network.model.AllArticlesDto
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
+import java.util.*
 
 interface ApiService {
 
@@ -56,7 +57,7 @@ interface ApiService {
         private const val Q_APPLE = "apple"
         private const val Q_TESLA = "tesla"
         private const val FROM_APPLE = "2022-04-13"
-        private const val FROM_TESLA = "2022-03-15"
+        private var FROM_TESLA = "2022-03-${Calendar.getInstance().time.date}"
         private const val TO = "2022-04-13"
         private const val SORT_BY_APPLE = "popularity"
         private const val SORT_BY_TESLA = "publishedAt"
